@@ -108,7 +108,7 @@ function Edit(props) {
       title: 'Discover Lorem From Flavors Within Wines.',
       subtitle: 'About Us'
     }], ['core/paragraph', {
-      placeholder: 'Incididunt voluptate aliqua Lorem aliqua nulla proident elit. Amet sint dolore consectetur sit est labore amet deserunt. In quis sit ut. Non magna et magna ad nisi officia.'
+      content: 'Incididunt voluptate aliqua Lorem aliqua nulla proident elit. Amet sint dolore consectetur sit est labore amet deserunt. In quis sit ut. Non magna et magna ad nisi officia.'
     }], ['beefblocks/open-hours']],
     templateLock: true
   });
