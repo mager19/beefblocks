@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "beefblocks/about-content-right",
+  "version": "0.1.0",
+  "title": "About content right",
+  "category": "beef-blocks",
+  "icon": "smiley",
+  "description": "About content right",
+  "example": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "default": "Incididunt voluptate aliqua Lorem aliqua nulla proident elit. Amet sint dolore consectetur sit est labore amet deserunt. In quis sit ut. Non magna et magna ad nisi officia."
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "beefblocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php",
+  "parent": [
+    "beefblocks/about-content"
+  ]
+}

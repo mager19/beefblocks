@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "beefblocks/open-hours",
+	"version": "0.1.0",
+	"title": "Open Hours",
+	"category": "beef-blocks",
+	"icon": "smiley",
+	"description": "Display your open hours",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Opening Hours"
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "beefblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

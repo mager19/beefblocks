@@ -1,0 +1,169 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/about-content/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/*==========================
+    About / Style-1 
+===========================*/
+.about__image-info {
+    display: flex;
+    align-items: center
+}
+.about__image-info .about-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0px
+}
+.about__image-info .about-content__image {
+    position: relative;
+    grid-column: span 3 / span 3;
+    display: none;
+    max-height: 1080px;
+    overflow: hidden
+}
+@media (min-width: 1024px) {
+    .about__image-info .about-content__image {
+        display: block
+    }
+}
+@media (min-width: 1280px) {
+    .about__image-info .about-content__image {
+        grid-column: span 6 / span 6
+    }
+}
+.about__image-info .about-content__image figure,
+.about__image-info .about-content__image img {
+    height: 100%;
+    width: 100%;
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center
+}
+.about__image-info .about-content__info {
+    position: relative;
+    grid-column: span 12 / span 12;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 1rem;
+    padding-left: 1rem
+}
+@media (min-width: 640px) {
+    .about__image-info .about-content__info {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem
+    }
+}
+@media (min-width: 768px) {
+    .about__image-info .about-content__info {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-right: 5rem;
+        padding-left: 5rem
+    }
+}
+@media (min-width: 1024px) {
+    .about__image-info .about-content__info {
+        grid-column: span 9 / span 9
+    }
+}
+@media (min-width: 1280px) {
+    .about__image-info .about-content__info {
+        grid-column: span 6 / span 6;
+        max-width: 720px;
+        padding-top: 7rem;
+        padding-bottom: 7rem
+    }
+}
+.about__image-info .about-content__description {
+    margin-top: 0px;
+    padding-bottom: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(209 210 212 / var(--tw-text-opacity, 1))
+}
+.about__image-info .about-content__description p {
+    margin-top: 0px
+}
+.about__image-info p {
+    margin-top: 0px;
+    padding-bottom: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(209 210 212 / var(--tw-text-opacity, 1))
+}
+/*==========================
+    About Us / Style-2 
+===========================*/
+.about-s2__container-fluid {
+    position: relative;
+    width: 100%
+}
+.about-s2__content {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1rem
+}
+.about-s2__image {
+    grid-column: span 3 / span 3;
+    display: none
+}
+@media (min-width: 1024px) {
+    .about-s2__image {
+        display: block
+    }
+}
+.about-s2__image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center
+}
+.about-s2__text {
+    grid-column: span 12 / span 12;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center
+}
+@media (min-width: 640px) {
+    .about-s2__text {
+        grid-column: span 10 / span 10;
+        grid-column-start: 2
+    }
+}
+@media (min-width: 1024px) {
+    .about-s2__text {
+        grid-column: span 6 / span 6
+    }
+}
+@media (min-width: 1280px) {
+    .about-s2__text {
+        padding-right: 5rem;
+        padding-left: 5rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem
+    }
+}
+.about-s2__text .section-title {
+    margin-bottom: 0px
+}

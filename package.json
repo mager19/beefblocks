@@ -1,0 +1,40 @@
+{
+	"name": "beefblocks",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build && yarn build:css",
+		"build:css": "npx tailwindcss --postcss -i ./src/styles/tailwind.css -c ./tailwind.config.js -o ./style.css",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "concurrently \"wp-scripts start\" \"yarn start:css\"",
+		"start:css": "npx tailwindcss --postcss -i ./src/styles/tailwind.css -c ./tailwind.config.js -o ./style.css --watch"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.6.0",
+		"concurrently": "^9.1.0"
+	},
+	"dependencies": {
+		"autoprefixer": "^10.4.20",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.49",
+		"postcss-import": "^15.1.0",
+		"postcss-import-ext-glob": "^2.1.1",
+		"postcss-loader": "^7.3.2",
+		"postcss-nested": "^6.0.1",
+		"postcss-nesting": "^11.2.2",
+		"postcss-preset-env": "^8.4.2",
+		"postcss-rem": "^2.0.4",
+		"postcss-simple-vars": "^7.0.1",
+		"precss": "^3.1.0",
+		"prettier": "^3.2.5",
+		"prettier-plugin-tailwindcss": "^0.5.13",
+		"tailwindcss": "^3.4.16"
+	}
+}

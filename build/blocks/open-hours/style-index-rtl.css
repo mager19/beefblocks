@@ -1,0 +1,93 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/open-hours/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.wp-block-beefblocks-open-hours .opening-hours {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(87 71 52 / var(--tw-border-opacity, 1)) !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important
+}
+.wp-block-beefblocks-open-hours .opening-hours__header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.wp-block-beefblocks-open-hours .opening-hours__header h3 {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 28px !important;
+    line-height: 1.4 !important;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(209 210 212 / var(--tw-text-opacity, 1))
+}
+@media (min-width: 768px) {
+    .wp-block-beefblocks-open-hours .opening-hours__header h3 {
+        font-size: 38px !important;
+        line-height: 1.2 !important
+    }
+}
+@media (min-width: 1280px) {
+    .wp-block-beefblocks-open-hours .opening-hours__header h3 {
+        margin-bottom: 1.5rem
+    }
+}
+.wp-block-beefblocks-open-hours .opening-hours__body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.wp-block-beefblocks-open-hours .opening-hours__item {
+    margin-bottom: 0.5rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 0.5rem
+}
+.wp-block-beefblocks-open-hours .opening-hours__item:last-of-type {
+    margin-bottom: 0px
+}
+@media (min-width: 640px) {
+    .wp-block-beefblocks-open-hours .opening-hours__item {
+        grid-template-columns: repeat(6, minmax(0, 1fr))
+    }
+}
+.wp-block-beefblocks-open-hours .opening-hours__item-day {
+    grid-column: span 4 / span 4;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    --tw-text-opacity: 1;
+    color: rgb(217 178 130 / var(--tw-text-opacity, 1))
+}
+.wp-block-beefblocks-open-hours .opening-hours__item-time {
+    grid-column: span 4 / span 4;
+    text-align: left;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: rgb(209 210 212 / var(--tw-text-opacity, 1))
+}
+@media (min-width: 640px) {
+    .wp-block-beefblocks-open-hours .opening-hours__item-time {
+        grid-column: span 2 / span 2
+    }
+}

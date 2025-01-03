@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "beefblocks/section-header",
+	"version": "0.1.0",
+	"title": "Section Header",
+	"category": "beef-blocks",
+	"icon": "smiley",
+	"description": "Section Header block for Beef Blocks.",
+	"example": {},
+	"attributes": {
+		"showSubtitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "About Us"
+		},
+		"title": {
+			"type": "string",
+			"default": "Discover Lorem From Flavors Within Wines."
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["left", "center"]
+	},
+	"textdomain": "beefblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}
