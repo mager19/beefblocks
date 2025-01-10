@@ -3,8 +3,6 @@ $showSubtitle = isset($attributes['showSubtitle']) ? (bool) $attributes['showSub
 $subtitle = isset($attributes['subtitle']) ? esc_html($attributes['subtitle']) : 'About Us';
 $title = isset($attributes['title']) ? esc_html($attributes['title']) : 'Discover Lorem From <br />Flavors Within Wines.';
 
-
-
 ?>
 <div <?php echo get_block_wrapper_attributes(
             [

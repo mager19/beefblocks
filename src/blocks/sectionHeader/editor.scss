@@ -5,7 +5,14 @@
  */
 
 .wp-block-beefblocks-section-header {
-	@apply relative;
+	@apply relative w-full;
 	// border: 1px dotted theme("colors.calico.400");
-	// todo: remover borde si es hijo
+
+	&.aligncenter {
+		@apply text-center;
+	}
+
+	p {
+		@apply text-white;
+	}
 }

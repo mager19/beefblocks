@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "beefblocks/special-offers-slider",
+  "version": "0.1.0",
+  "title": "Special Offers Slider",
+  "category": "beef-blocks",
+  "icon": "smiley",
+  "description": "A slider block for displaying special offers.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "beefblocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php",
+  "parent": [
+    "beefblocks/special-offers"
+  ]
+}

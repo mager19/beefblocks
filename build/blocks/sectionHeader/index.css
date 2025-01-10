@@ -7,7 +7,15 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-beefblocks-section-header {
-    position: relative
+    position: relative;
+    width: 100%
+}
+.wp-block-beefblocks-section-header.aligncenter {
+    text-align: center
+}
+.wp-block-beefblocks-section-header p {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1))
 }
 
 /*# sourceMappingURL=index.css.map*/

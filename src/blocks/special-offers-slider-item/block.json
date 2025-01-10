@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "beefblocks/special-offers-slider-item",
+	"version": "0.1.0",
+	"title": "Special Offers Slider Item",
+	"category": "beef-blocks",
+	"icon": "smiley",
+	"description": "A single item in the special offers slider.",
+	"attributes": {
+		"item_title": {
+			"type": "string",
+			"default": "Four cheese garlic bread"
+		},
+		"show_item_price": {
+			"type": "boolean",
+			"default": true
+		},
+		"item_price": {
+			"type": "string",
+			"default": "$32.00"
+		},
+		"item_description": {
+			"type": "string",
+			"default": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, "
+		},
+		"item_more_info": {
+			"type": "string",
+			"default": "lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. san ipsum velit."
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "beefblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php",
+	"parent": ["beefblocks/special-offers-slider"]
+}

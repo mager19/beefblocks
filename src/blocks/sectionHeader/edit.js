@@ -43,6 +43,8 @@ export default function Edit(props) {
 		title,
 		subtitle,
 		showSubtitle,
+		showDescription,
+		description
 	} = attributes;
 
 	const blockProps = useBlockProps({
@@ -67,6 +69,13 @@ export default function Edit(props) {
 							onChange={(showSubtitle) => setAttributes({ showSubtitle: showSubtitle })}
 						/>
 					</PanelRow>
+					<PanelRow>
+						<ToggleControl
+							label="Show Description"
+							checked={showDescription}
+							onChange={(showDescription) => setAttributes({ showDescription: showDescription })}
+						/>
+					</PanelRow>
 				</PanelBody>
 			</InspectorControls>
 			<div {...blockProps}>
@@ -76,6 +85,7 @@ export default function Edit(props) {
 							text={__(props.name)}
 						/>
 					}
+					{/* todo: poner las clases que son en la vista de edit */}
 					<div className="content">
 						{
 							showSubtitle && (
@@ -93,6 +103,15 @@ export default function Edit(props) {
 							onChange={(title) => setAttributes({ title })}
 							className='section-title__title'
 						/>
+
+						{showDescription && (
+							<RichText
+								tagName='p'
+								value={description}
+								onChange={(description) => setAttributes({ description })}
+								className='section-title__description'
+							/>
+						)}
 					</div>
 				</div>
 			</div>

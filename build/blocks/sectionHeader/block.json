@@ -20,6 +20,14 @@
     "title": {
       "type": "string",
       "default": "Discover Lorem From Flavors Within Wines."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   },
   "supports": {
